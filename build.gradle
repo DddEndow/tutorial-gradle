@@ -31,3 +31,11 @@ task intro(dependsOn: hello) {
 //        println "I'm Gradle"
 //    }
 //}
+
+4.times {counter ->
+    task "task$counter" {
+        doLast{
+            println "I'm tas number $counter"
+        }
+    }
+}
