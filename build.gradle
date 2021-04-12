@@ -23,3 +23,11 @@ task intro(dependsOn: hello) {
         println "I'm Gradle"
     }
 }
+
+//こっちも可能
+//task intro {
+//    dependsOn "hello"
+//    doLast {
+//        println "I'm Gradle"
+//    }
+//}
