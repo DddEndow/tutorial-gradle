@@ -17,3 +17,9 @@ task count {
         4.times { print "$it " }
     }
 }
+
+task intro(dependsOn: hello) {
+    doLast {
+        println "I'm Gradle"
+    }
+}
