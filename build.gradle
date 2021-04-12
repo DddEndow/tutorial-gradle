@@ -57,3 +57,17 @@ task printTaskProperties {
         println myTask.myProperty
     }
 }
+
+defaultTasks 'clean', 'run'
+
+task clean {
+    doLast {
+        println 'Default Cleaning!'
+    }
+}
+
+task run {
+    doLast {
+        println 'Default Running!'
+    }
+}
