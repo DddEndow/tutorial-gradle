@@ -47,3 +47,13 @@ task intro(dependsOn: hello) {
     }
 }
 task0.dependsOn task2, task3
+
+task myTask {
+    ext.myProperty = "myValue"
+}
+
+task printTaskProperties {
+    doLast {
+        println myTask.myProperty
+    }
+}
