@@ -4,6 +4,13 @@ task hello {
     }
 }
 
+hello.doFirst {
+    println 'Hello Venus'
+}
+hello.doLast {
+    println 'Hello Mars'
+}
+
 task upper {
     doLast {
         String someString = 'mY_nAmE'
@@ -39,3 +46,4 @@ task intro(dependsOn: hello) {
         }
     }
 }
+task0.dependsOn task2, task3
